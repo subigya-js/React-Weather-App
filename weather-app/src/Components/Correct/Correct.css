@@ -1,0 +1,169 @@
+.correct-main {
+    height: 100%;
+    width: 100%;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.city-name {
+    text-align: center;
+    font-size: 35px;
+    color: #e3dede;
+}
+
+.condition p {
+    color: #beb1b1;
+    font-size: 80px;
+    text-align: center;
+
+    animation: weather-condition 2s ease-in-out infinite alternate;
+}
+
+@keyframes weather-condition {
+    0% {
+        transform: scale(1.3);
+    }
+}
+
+.details {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    row-gap: 20px;
+    color: #e3dede;
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.temperature,
+.humidity,
+.wind-speed {
+    text-align: center;
+}
+
+.wind-speed {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+
+/* Responsive */
+
+/* laptop */
+@media screen and (min-width: 1024px) {
+    .city-name {
+        font-size: 1.5rem;
+    }
+
+    .condition p {
+        font-size: 3rem;
+    }
+
+    .temp-data {
+        font-size: 1.2rem;
+    }
+
+    .humidity-data {
+        font-size: 1.2rem;
+    }
+
+    .wind-data {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+    .city-name {
+        font-size: 1.5rem;
+    }
+
+    .condition p {
+        font-size: 3rem;
+    }
+
+    .temp-data {
+        font-size: 1.2rem;
+    }
+
+    .humidity-data {
+        font-size: 1.2rem;
+    }
+
+    .wind-data {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+}
+
+/* Large Mobile */
+@media screen and (min-width: 425px) {
+    .city-name {
+        font-size: 1.5rem;
+    }
+
+    .condition p {
+        font-size: 3rem;
+    }
+
+    .temp-data {
+        font-size: 1.2rem;
+    }
+
+    .humidity-data {
+        font-size: 1.2rem;
+    }
+
+    .wind-data {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+}
+
+/* Medium Mobile  */
+@media screen and (min-width: 375px) {
+    .city-name {
+        font-size: 1.5rem;
+    }
+
+    .condition p {
+        font-size: 3rem;
+    }
+
+    .temp-data {
+        font-size: 1.2rem;
+    }
+
+    .humidity-data {
+        font-size: 1.2rem;
+    }
+
+    .wind-data {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+}
+
+/* Small Mobile  */
+@media screen and (min-width: 320px) {
+    .city-name {
+        font-size: 1.5rem;
+    }
+
+    .condition p {
+        font-size: 3rem;
+    }
+
+    .temp-data {
+        font-size: 1.2rem;
+    }
+
+    .humidity-data {
+        font-size: 1.2rem;
+    }
+
+    .wind-data {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+}
